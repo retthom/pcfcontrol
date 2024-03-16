@@ -21,7 +21,7 @@ export const QuestionInputStack: React.FC<QuestionInputStackProps> = ({ question
   <Stack>
     {questions.map((question: any, index: number) => (
       <div key={index} style={inputContainerStyle}>
-        <Label style={labelStyle}>{question.lfs_translationname}</Label>
+        <Label style={labelStyle}>{question.name}</Label>
         <QuestionInput dataTypeName={question["lfs_questiondatatype@OData.Community.Display.V1.FormattedValue"]} />
       </div>
     ))}
